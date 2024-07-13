@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+.custom-hr {
+    position: relative;
+    width: 30px;
+    height: 10px;
+  }
+
+  .custom-hr::before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 4px;
+    background-color: #02b85d;
+  }
+  
+  .custom-hr::after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    width: 6px;
+    height: 4px;
+    background-color: #02b85d;
+  }
+  
